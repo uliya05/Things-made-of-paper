@@ -1,23 +1,23 @@
 .paper-things__container, .nav__container {
   width: 80%;
   margin: 0 auto;
-  font-family: "Roboto";
+  font-family: "./fonts/Roboto-Regular.ttf";
 }
 
-.paper-things__content-button {
+.paper-things__container .paper-things__content .paper-things__content-button {
   max-width: 255px;
   width: 100%;
   min-height: 70px;
   border: 1px solid #7875FE;
   color: #7875FE;
-  font-size: calc(18px + 0.1388888889vw);
+  font-size: 1.25em;
 }
 
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/Roboto-Regular.ttf") format("truetype");
+  src: url("./fonts/Roboto-Regular.ttf") format("truetype");
 }
 .nav__container {
   display: flex;
@@ -50,4 +50,27 @@
 
 .header__line {
   width: 100%;
+}
+
+.paper-things__container {
+  display: flex;
+  min-height: 100%;
+  padding-top: 5%;
+  gap: 13%;
+}
+.paper-things__container .paper-things__content {
+  width: 40%;
+}
+.paper-things__container .paper-things__content .paper-things__content-heading {
+  font-size: calc(38px + 1.5277777778vw);
+  line-height: 100%;
+  color: #4C5866;
+}
+.paper-things__container .paper-things__content .paper-things__content-text {
+  font-size: 1.125em;
+  line-height: 150%;
+  color: #85859B;
+}
+.paper-things__container .paper-things__content .paper-things__content-button {
+  margin-top: 10%;
 }/*# sourceMappingURL=style.css.map */

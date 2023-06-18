@@ -1,7 +1,7 @@
 %container {
     width: 80%;
     margin: 0 auto;
-    font-family: $font;
+    font-family: $font-path;
 }
 %button {
     max-width: 255px;
@@ -9,5 +9,5 @@
     min-height: 70px;
     border: 1px solid #7875FE;
     color: #7875FE;
-    font-size: calc(18px + 2 * (100vw/1440));
+    font-size: 1.25em;
 }
