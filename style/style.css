@@ -1,3 +1,19 @@
+.paper-things__container,
+.nav__container {
+  width: 80%;
+  margin: 0 auto;
+  font-family: "./fonts/Roboto-Regular.ttf";
+}
+
+.paper-things__container .paper-things__content .paper-things__content-button {
+  max-width: 255px;
+  width: 100%;
+  min-height: 70px;
+  border: 1px solid #7875FE;
+  color: #7875FE;
+  font-size: 1.25em;
+}
+
 @font-face {
   font-family: "Roboto";
   font-style: normal;
