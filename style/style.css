@@ -14,10 +14,10 @@
 }
 
 @font-face {
-  font-family: "Roboto";
+  font-family: "Roboto-Regular";
   font-style: normal;
   font-weight: 400;
-  src: url("./fonts/Roboto-Regular.ttf") format("truetype");
+  src: url(../fonts/Roboto-Regular.ttf);
 }
 .nav__container {
   display: flex;
@@ -73,6 +73,9 @@
 }
 .paper-things__container .paper-things__content .paper-things__content-button {
   margin-top: 10%;
+}
+.paper-things__container .paper-things__images-adaptiv {
+  display: none;
 }
 
 .clients {
