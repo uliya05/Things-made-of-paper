@@ -1,7 +1,7 @@
 .paper-things__container, .nav__container {
   width: 80%;
   margin: 0 auto;
-  font-family: "./fonts/Roboto-Regular.ttf";
+  font-family: "Roboto-Regular";
 }
 
 .paper-things__container .paper-things__content .paper-things__content-button {
@@ -14,10 +14,10 @@
 }
 
 @font-face {
-  font-family: "Roboto";
+  font-family: "Roboto-Regular";
   font-style: normal;
   font-weight: 400;
-  src: url("./fonts/Roboto-Regular.ttf") format("truetype");
+  src: url(../fonts/Roboto-Regular.ttf);
 }
 .nav__container {
   display: flex;
@@ -40,12 +40,13 @@
   text-decoration: none;
   color: #4C5866;
 }
+.nav__container .nav__burger {
+  display: none;
+}
 .nav__container .nav__icon {
   flex-basis: 7%;
+  display: flex;
   justify-content: space-between;
-}
-.nav__container .nav__icon .nav__icon-exit {
-  margin-left: 15%;
 }
 
 .header__line {
@@ -73,4 +74,7 @@
 }
 .paper-things__container .paper-things__content .paper-things__content-button {
   margin-top: 10%;
+}
+.paper-things__container .paper-things__images-adaptiv {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
