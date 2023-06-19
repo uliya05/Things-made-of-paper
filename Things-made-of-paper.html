@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/Normalize.css" />
-    <link rel="stylesheet" href="./style/style.css" />
-    <title>Document</title>
-</head>
-
 <body>
     <header class="header">
         <nav class="nav">
@@ -33,14 +24,35 @@
                         </li>
                     </ul>
                 </div>
-                <div class="nav__burger">
-                    <img class="nav__burger-img" src="./images/burger.png" alt="burger" />
-                </div>
                 <div class="nav__icon">
                     <img class="nav__icon-search" src="./images/search_nav.png" alt="search" />
                     <img class="nav__icon-exit" src="./images/exit_nav.png" alt="exit" />
                 </div>
             </div>
+        </nav>
+        <div class="header__line">
+            <img class="header__line-img" src="./images/line_header.svg" alt="line" />
+        </div>
+        <div class="paper-things">
+            <div class="paper-things__container">
+                <div class="paper-things__content">
+                    <h1 class="paper-things__content-heading">
+                        Простые вещи. Из бумаги
+                    </h1>
+                    <p class="paper-things__content-text">
+                        Бума́га (предположительно от итал. bombagia,
+                        первоисточником же считается иранский) — волокнистый
+                        материал с минеральными добавками.
+                    </p>
+                    <button class="paper-things__content-button">
+                        Каталог
+                    </button>
+                </div>
+                <div class="paper-things__images">
+                    <img src="./images/paper_header.png" alt="paper" />
+                </div>
+            </div>
+        </div>
         </nav>
         <div class="header__line">
             <img class="header__line-img" src="./images/line_header.svg" alt="line" />
@@ -168,5 +180,64 @@
         </div>
     </footer>
 </body>
+<section class="products">
+    <div class="products__container container">
+        <div class="products__item">
+            <h3 class="products__item-title">
+                Упаковка
+            </h3>
+            <h5 class="products__item-title">
+                Тираж: от 50 штук
+            </h5>
+            <p class="products__item-text">
+                Сделано из крафт-бумаги или плотного картона.
+                Упаковки имеют различные формы и расцветки,
+                изготовим форму под заказ.
+            </p>
+        </div>
+        <div class="products__item">
+            <h3 class="products__item-title">
+                Пакеты
+            </h3>
+            <h5 class="products__item-title">
+                Тираж: от 200 штук
+            </h5>
+            <p class="products__item-text">
+                C прямоугольным дном.
+                От 10 см до 60 см по высоте.
+                Материалы: картон, крафт-бумага.
+                Различные расцветки и дизайн.
+            </p>
+        </div>
+        <div class="products__item">
+            <h3 class="products__item-title">
+                Кейсы
+            </h3>
+            <h5 class="products__item-title">
+                Тираж: от 30 штук
+            </h5>
+            <p class="products__item-text">
+                C прямоугольным дном.
+                От 10 см до 60 см по высоте.
+                Материал подойдет для документов и других бумаг.
+                Различные расцветки, размеры и плотность.
+                Материал: прессованная бумага.
+            </p>
+        </div>
+        <div class="products__item">
+            <h3 class="products__item-title">
+                Другие изделия
+            </h3>
+            <h5 class="products__item-title">
+                Тираж: от 100 штук
+            </h5>
+            <p class="products__item-text">
+                Нестандартные упаковки, кейсы и другие изделия
+                различных размеров и конфигураций.
+                Изготовим в кратчайшие сроки.
+            </p>
+        </div>
+    </div>
+</section>
 
 </html>
