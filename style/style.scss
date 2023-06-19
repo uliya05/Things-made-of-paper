@@ -85,7 +85,8 @@
 }
 
 .clients {
-    background-color: $background;
+    background-color: #EBEBEB;
+
 
     .clients__container {
         @extend %container;
@@ -126,7 +127,7 @@
         }
 
         .sketchbook__text {
-            font-size: $font-basic;
+            font-size: 1.125em;
             line-height: 170%;
             color: #85859B;
         }
