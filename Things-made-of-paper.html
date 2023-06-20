@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/Normalize.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Document</title>
+</head>
+
 <body>
     <header class="header">
         <nav class="nav">
@@ -23,6 +32,9 @@
                             <a class="nav__link-href" href="#"></a>Контакты
                         </li>
                     </ul>
+                </div>
+                <div class="nav__burger">
+                    <img class="nav__burger-img" src="./images/burger.png" alt="burger" />
                 </div>
                 <div class="nav__icon">
                     <img class="nav__icon-search" src="./images/search_nav.png" alt="search" />
@@ -49,34 +61,10 @@
                     </button>
                 </div>
                 <div class="paper-things__images">
-                    <img src="./images/paper_header.png" alt="paper" />
-                </div>
-            </div>
-        </div>
-        </nav>
-        <div class="header__line">
-            <img class="header__line-img" src="./images/line_header.svg" alt="line" />
-        </div>
-        <div class="paper-things">
-            <div class="paper-things__container">
-                <div class="paper-things__content">
-                    <h1 class="paper-things__content-heading">
-                        Простые вещи. Из бумаги
-                    </h1>
-                    <p class="paper-things__content-text">
-                        Бума́га (предположительно от итал. bombagia,
-                        первоисточником же считается иранский) — волокнистый
-                        материал с минеральными добавками.
-                    </p>
-                    <button class="paper-things__content-button">
-                        Каталог
-                    </button>
-                </div>
-                <div class="paper-things__images">
                     <img class="paper-things__paper" src="./images/paper_header.png" alt="paper" />
                 </div>
                 <div class="paper-things__images-adaptiv">
-                    <img class="paper-things__paper-adaptiv" src="./images/paper-header-adaptiv.png" alt="paper" />
+                    <img class="paper-things__paper-adaptive" src="./images/paper-header-adaptiv.png" alt="paper" />
                 </div>
             </div>
         </div>
@@ -84,160 +72,169 @@
 
     <main class="main">
         <section class="max-whiteness">
-            <div class="max-whiteness__container container">
+            <div class="max-whiteness__container">
                 <div class="max-whiteness__items">
                     <div class="max-whiteness__item">
                         <img class="max-whiteness__item-img" src="images/three_cards.png" alt="three-cards" />
-                        <h3 class="max-whiteness__item-title">V.1</h3>
-                        <p class="max-whiteness__item-text">
-                            Результат вашего обучения
-                        </p>
+                        <div class="max-whiteness__item-descr">
+                            <h3 class="max-whiteness__item-title">V.1</h3>
+                            <p class="max-whiteness__item-text">
+                                Результат вашего обучения
+                            </p>
+                        </div>
                     </div>
                     <div class="max-whiteness__item">
                         <img class="max-whiteness__item-img" src="images/two_cards.png" alt="two-cards" />
-                        <h3 class="max-whiteness__item-title">V.2</h3>
-                        <p class="max-whiteness__item-text">
-                            Результат вашего обучения
-                        </p>
+                        <div class="max-whiteness__item-descr">
+                            <h3 class="max-whiteness__item-title">V.2</h3>
+                            <p class="max-whiteness__item-text">
+                                Результат вашего обучения
+                            </p>
+                        </div>
                     </div>
                     <div class="max-whiteness__item">
                         <img class="max-whiteness__item-img" src="images/two_cards_diagonal.png"
                             alt="two-cards-diagonal" />
-                        <h3 class="max-whiteness__item-title">V.3</h3>
-                        <p class="max-whiteness__item-text">
-                            Результат вашего обучения
+                        <div class="max-whiteness__item-descr">
+                            <h3 class="max-whiteness__item-title">V.3</h3>
+                            <p class="max-whiteness__item-text">
+                                Результат вашего обучения
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-whiteness__info">
+                    <img class="max-whiteness__info-img" src="images/open_folder.png" alt="open-folder" />
+                    <div class="max-whiteness__info-descr">
+                        <h3 class="max-whiteness__info-title">
+                            Максимальная белизна
+                        </h3>
+                        <p class="max-whiteness__info-text">
+                            Для повышения белизны, гладкости и мягкости в
+                            состав бумажной массы вводят белые минеральные
+                            вещества: мел, тальк, каолин и др. Эта операция
+                            называется наполнением.
+                        </p>
+                        <p class="max-whiteness__info-text">
+                            Отлив бумажного листа осуществляют на
+                            бумагоделательной машине, важнейшей частью
+                            которой является непрерывно движущаяся (как
+                            транспортер) металлическая или капроновая сетка.
                         </p>
                     </div>
                 </div>
-                <div class="max-whiteness__descr">
-                    <img class="max-whiteness__descr-img" src="images/open_folder.png" alt="open-folder" />
-                    <h3 class="max-whhiteness__descr-title">
-                        Максимальная белизна
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="products__container">
+                <div class="products__item">
+                    <h3 class="products__item-title">
+                        Упаковка
                     </h3>
-                    <p class="max-whiteness__descr-text">
-                        Для повышения белизны, гладкости и мягкости в состав
-                        бумажной массы вводят белые минеральные вещества:
-                        мел, тальк, каолин и др. Эта операция называется
-                        наполнением.
+                    <h5 class="products__item-title">
+                        Тираж: от 50 штук
+                    </h5>
+                    <p class="products__item-text">
+                        Сделано из крафт-бумаги или плотного картона.
+                        Упаковки имеют различные формы и расцветки,
+                        изготовим форму под заказ.
                     </p>
-                    <p class="maw-whiteness__descr-text">
-                        Отлив бумажного листа осуществляют на
-                        бумагоделательной машине, важнейшей частью которой
-                        является непрерывно движущаяся (как транспортер)
-                        металлическая или капроновая сетка.
+                </div>
+                <div class="products__item">
+                    <h3 class="products__item-title">
+                        Пакеты
+                    </h3>
+                    <h5 class="products__item-title">
+                        Тираж: от 200 штук
+                    </h5>
+                    <p class="products__item-text">
+                        C прямоугольным дном. От 10 см до 60 см по высоте.
+                        Материалы: картон, крафт-бумага. Различные расцветки
+                        и дизайн.
+                    </p>
+                </div>
+                <div class="products__item">
+                    <h3 class="products__item-title">
+                        Кейсы
+                    </h3>
+                    <h5 class="products__item-title">
+                        Тираж: от 30 штук
+                    </h5>
+                    <p class="products__item-text">
+                        C прямоугольным дном. От 10 см до 60 см по высоте.
+                        Материал подойдет для документов и других бумаг.
+                        Различные расцветки, размеры и плотность. Материал:
+                        прессованная бумага.
+                    </p>
+                </div>
+                <div class="products__item">
+                    <h3 class="products__item-title">
+                        Другие изделия
+                    </h3>
+                    <h5 class="products__item-title">
+                        Тираж: от 100 штук
+                    </h5>
+                    <p class="products__item-text">
+                        Нестандартные упаковки, кейсы и другие изделия
+                        различных размеров и конфигураций. Изготовим в
+                        кратчайшие сроки.
                     </p>
                 </div>
             </div>
         </section>
 
-        <section class="clients">
-            <div class="clients__container container">
+        <div class="clients">
+            <div class="clients__container">
                 <div class="clients__name">
-                    <img class="clients__logo" src="/images/hahnemuehle-logo.png" alt="hahnemuehle">
+                    <img class="clients__logo" src="/images/hahnemuehle-logo.png" alt="hahnemuehle" />
                 </div>
                 <div class="clients__name">
-                    <img class="clients__logo" src="/images/canson.png" alt="canson">
+                    <img class="clients__logo" src="/images/canson.png" alt="canson" />
                 </div>
                 <div class="clients__name">
-                    <img class="clients__logo" src="/images/royal-talens-logo.png" alt="royal-talens">
+                    <img class="clients__logo" src="/images/royal-talens-logo.png" alt="royal-talens" />
                 </div>
                 <div class="clients__name">
-                    <img class="clients__logo" src="/images/fabriano.png" alt="fabriano">
+                    <img class="clients__logo" src="/images/fabriano.png" alt="fabriano" />
                 </div>
             </div>
-        </section>
-        <section class="sketchbook">
-            <div class="sketchbook__container container">
+        </div>
+        <div class="sketchbook">
+            <div class="sketchbook__container">
                 <div class="sketchbook__content">
                     <h1 class="sketchbook__header">Simple скетчбук</h1>
-                    <p class="sketchbook__text">80 листов, твердая обложка, бумага<br> Fabriano 200 г/м2. Подойдет и
-                        для<br>
-                        графики и для акварели. Для самых<br> смелых творческих замыслов!</p>
+                    <p class="sketchbook__text">
+                        80 листов, твердая обложка, бумага Fabriano
+                        200 г/м2. Подойдет и для графики и для акварели. Для
+                        самых смелых творческих замыслов!
+                    </p>
                     <button class="sketchbook__btn">Купить</button>
                 </div>
                 <div class="sketchbook__image">
-                    <img src="/images/book.png" alt="book">
+                    <img src="/images/book.png" alt="book" />
                 </div>
             </div>
-        </section>
+        </div>
     </main>
     <footer class="footer">
         <div class="contacts">
             <div class="contacts__container container">
                 <div class="contacts__logo">
-                    <img src="/images/simple-logo.svg" alt="simple-logo">
+                    <img src="/images/simple-logo.svg" alt="simple-logo" />
                 </div>
                 <div class="contacts__social-network">
-                    <img class="contacts__icon" src="/images/facebook.png" alt="facebook">
-                    <img class="contacts__icon" src="/images/twitter.png" alt="twitter">
-                    <img class="contacts__icon" src="/images/instagram.png" alt="instagram">
-                    <img class="contacts__icon" src="/images/youtube.png" alt="youtube">
+                    <img class="contacts__icon" src="/images/facebook.png" alt="facebook" />
+                    <img class="contacts__icon" src="/images/twitter.png" alt="twitter" />
+                    <img class="contacts__icon" src="/images/instagram.png" alt="instagram" />
+                    <img class="contacts__icon" src="/images/youtube.png" alt="youtube" />
                 </div>
             </div>
         </div>
         <div class="date">
-            <p class="date__footer">Simple ® 2021</p>
+            <p class="date__footer">SIMPLE ® 2021</p>
         </div>
     </footer>
 </body>
-<section class="products">
-    <div class="products__container container">
-        <div class="products__item">
-            <h3 class="products__item-title">
-                Упаковка
-            </h3>
-            <h5 class="products__item-title">
-                Тираж: от 50 штук
-            </h5>
-            <p class="products__item-text">
-                Сделано из крафт-бумаги или плотного картона.
-                Упаковки имеют различные формы и расцветки,
-                изготовим форму под заказ.
-            </p>
-        </div>
-        <div class="products__item">
-            <h3 class="products__item-title">
-                Пакеты
-            </h3>
-            <h5 class="products__item-title">
-                Тираж: от 200 штук
-            </h5>
-            <p class="products__item-text">
-                C прямоугольным дном.
-                От 10 см до 60 см по высоте.
-                Материалы: картон, крафт-бумага.
-                Различные расцветки и дизайн.
-            </p>
-        </div>
-        <div class="products__item">
-            <h3 class="products__item-title">
-                Кейсы
-            </h3>
-            <h5 class="products__item-title">
-                Тираж: от 30 штук
-            </h5>
-            <p class="products__item-text">
-                C прямоугольным дном.
-                От 10 см до 60 см по высоте.
-                Материал подойдет для документов и других бумаг.
-                Различные расцветки, размеры и плотность.
-                Материал: прессованная бумага.
-            </p>
-        </div>
-        <div class="products__item">
-            <h3 class="products__item-title">
-                Другие изделия
-            </h3>
-            <h5 class="products__item-title">
-                Тираж: от 100 штук
-            </h5>
-            <p class="products__item-text">
-                Нестандартные упаковки, кейсы и другие изделия
-                различных размеров и конфигураций.
-                Изготовим в кратчайшие сроки.
-            </p>
-        </div>
-    </div>
-</section>
 
 </html>
