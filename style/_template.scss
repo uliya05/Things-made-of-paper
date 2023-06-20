@@ -2,6 +2,9 @@
     width: 80%;
     margin: 0 auto;
     font-family: $font-path;
+    @media (max-width:930px) {
+        width: 90%;
+    }
 }
 %button {
     max-width: 255px;
