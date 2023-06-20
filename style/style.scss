@@ -1,10 +1,10 @@
-@import'./vars';
-@import'./template';
+@import './vars';
+@import './template';
 @font-face {
     font-family: 'Roboto-Regular';
     font-style: normal;
     font-weight: 400;
-    src: url(../fonts/Roboto-Regular.ttf) 
+    src: url(../fonts/Roboto-Regular.ttf);
 }
 
 .nav__container {
@@ -13,32 +13,32 @@
     justify-content: space-between;
     align-items: center;
     height: 7vh;
-    .nav__logo{
+    .nav__logo {
         flex-basis: 30%;
     }
-        .nav__link{
-            flex-grow: 1;
-            .nav__link-ul{
-                list-style: none;
-                display: flex;
-                justify-content: space-around;
-                .nav__link-li{
-                    .nav__link-href{
-                        text-decoration: none;
-                        color: $nav;
-                    }
+    .nav__link {
+        flex-grow: 1;
+        .nav__link-ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            .nav__link-li {
+                .nav__link-href {
+                    text-decoration: none;
+                    color: $nav;
                 }
             }
         }
+    }
 
-        .nav__burger {
-            display: none;
-        }
-        .nav__icon{
-            flex-basis: 7%;
-            display: flex;
-            justify-content: space-between;
-        }
+    .nav__burger {
+        display: none;
+    }
+    .nav__icon {
+        flex-basis: 7%;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 .header__line {
     width: 100%;
@@ -49,18 +49,18 @@
     min-height: 100%;
     padding-top: 5%;
     gap: 13%;
-    .paper-things__content{
+    .paper-things__content {
         width: 40%;
-        
-        .paper-things__content-heading{
-            font-size: calc(38px + 22 * (100vw/1440));
+
+        .paper-things__content-heading {
+            font-size: calc(38px + 22 * (100vw / 1440));
             line-height: 100%;
-            color: #4C5866;
+            color: #4c5866;
         }
         .paper-things__content-text {
             font-size: 1.125em;
             line-height: 150%;
-            color: #85859B;
+            color: #85859b;
         }
         .paper-things__content-button {
             @extend %button;
@@ -71,4 +71,29 @@
         display: none;
     }
 }
-
+.max-whiteness {
+    background-color: $second-bg-color;
+    padding: 5% 0 5%;
+    .max-whiteness__container {
+        @extend %container;
+        .max-whiteness__items {
+            @extend %flex;
+            .max-whiteness__item {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                padding: 1%;
+                border-top: 1px solid #c0c0c0;
+            }
+        }
+        .max-whiteness__info {
+            @extend %flex;
+            .max-whiteness__info-img {
+                flex-basis: 65%;
+            }
+            .max-whiteness__info-descr {
+                flex-basis: 35%;
+            }
+        }
+    }
+}

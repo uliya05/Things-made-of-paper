@@ -7,7 +7,12 @@
     max-width: 255px;
     width: 100%;
     min-height: 70px;
-    border: 1px solid #7875FE;
-    color: #7875FE;
+    border: 1px solid #7875fe;
+    color: #7875fe;
     font-size: 1.25em;
+}
+%flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
