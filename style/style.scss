@@ -27,6 +27,9 @@
         @media (max-width:930px) {
             grid-row: 1;
         }
+        @media (max-width:550px) {
+            justify-self: center;
+        }
     }
 
     .nav__link {
@@ -34,6 +37,9 @@
 
         @media (max-width:930px) {
             grid-row: 2;
+        }
+        @media (max-width:550px) {
+            display: none;
         }
 
         .nav__link-ul {
@@ -53,6 +59,10 @@
 
 .nav__burger {
     display: none;
+    @media (max-width:550px) {
+        display: block;
+        grid-row: 2;
+    }
 }
 
 .nav__icon {
@@ -62,6 +72,14 @@
 
     @media (max-width:930px) {
         grid-row: 1;
+    }
+    @media (max-width:550px) {
+        grid-row: 2;
+    }
+    .nav__icon-search{
+        @media (max-width:550px) {
+            margin-right: 20%;
+        }
     }
 }
 
@@ -73,20 +91,20 @@
     @extend %container;
     display: flex;
     min-height: 100%;
-
+    justify-content: space-between;
     padding-top: 5%;
-    gap: 13%;
-
-    @media (max-width:930px) {
-        gap: 1%;
-        justify-content: space-between;
-    }
+    gap: 1%;
 
     .paper-things__content {
-        width: 40%;
-
+        width: 50%;
+        @media(max-width:1123px) {
+            width: 60%;
+        }
         @media (max-width:930px) {
             width: 60%;
+        }
+        @media (max-width:550px) {
+            width: 100%;
         }
 
         .paper-things__content-heading {
@@ -103,7 +121,12 @@
 
         .paper-things__content-button {
             @extend %button;
-            margin-top: 10%;
+            margin-top: 5%;
+            
+            @media (max-width:550px) {
+                margin-top: 0;
+                margin-bottom: 10%;
+            }
         }
     }
 
@@ -118,6 +141,9 @@
 
         @media(max-width:1123px) {
             display: block;
+        }
+        @media (max-width:550px) {
+            display: none;
         }
     }
 }

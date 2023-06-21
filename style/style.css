@@ -51,12 +51,22 @@
     grid-row: 1;
   }
 }
+@media (max-width: 550px) {
+  .nav__container .nav__logo {
+    justify-self: center;
+  }
+}
 .nav__container .nav__link {
   flex-grow: 1;
 }
 @media (max-width: 930px) {
   .nav__container .nav__link {
     grid-row: 2;
+  }
+}
+@media (max-width: 550px) {
+  .nav__container .nav__link {
+    display: none;
   }
 }
 .nav__container .nav__link .nav__link-ul {
@@ -72,6 +82,12 @@
 .nav__burger {
   display: none;
 }
+@media (max-width: 550px) {
+  .nav__burger {
+    display: block;
+    grid-row: 2;
+  }
+}
 
 .nav__icon {
   flex-basis: 7%;
@@ -83,6 +99,16 @@
     grid-row: 1;
   }
 }
+@media (max-width: 550px) {
+  .nav__icon {
+    grid-row: 2;
+  }
+}
+@media (max-width: 550px) {
+  .nav__icon .nav__icon-search {
+    margin-right: 20%;
+  }
+}
 
 .header__line {
   width: 100%;
@@ -91,21 +117,26 @@
 .paper-things__container {
   display: flex;
   min-height: 100%;
+  justify-content: space-between;
   padding-top: 5%;
-  gap: 13%;
-}
-@media (max-width: 930px) {
-  .paper-things__container {
-    gap: 1%;
-    justify-content: space-between;
-  }
+  gap: 1%;
 }
 .paper-things__container .paper-things__content {
-  width: 40%;
+  width: 50%;
+}
+@media (max-width: 1123px) {
+  .paper-things__container .paper-things__content {
+    width: 60%;
+  }
 }
 @media (max-width: 930px) {
   .paper-things__container .paper-things__content {
     width: 60%;
+  }
+}
+@media (max-width: 550px) {
+  .paper-things__container .paper-things__content {
+    width: 100%;
   }
 }
 .paper-things__container .paper-things__content .paper-things__content-heading {
@@ -119,7 +150,13 @@
   color: #85859b;
 }
 .paper-things__container .paper-things__content .paper-things__content-button {
-  margin-top: 10%;
+  margin-top: 5%;
+}
+@media (max-width: 550px) {
+  .paper-things__container .paper-things__content .paper-things__content-button {
+    margin-top: 0;
+    margin-bottom: 10%;
+  }
 }
 @media (max-width: 1123px) {
   .paper-things__container .paper-things__images {
@@ -132,6 +169,11 @@
 @media (max-width: 1123px) {
   .paper-things__container .paper-things__images-adaptiv {
     display: block;
+  }
+}
+@media (max-width: 550px) {
+  .paper-things__container .paper-things__images-adaptiv {
+    display: none;
   }
 }
 
