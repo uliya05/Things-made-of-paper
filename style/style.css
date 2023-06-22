@@ -31,6 +31,12 @@
   font-weight: 400;
   src: url(../fonts/Roboto-Regular.ttf);
 }
+@font-face {
+  font-family: "Roboto-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/Roboto-Medium.ttf);
+}
 .nav__container {
   display: flex;
   justify-content: space-between;
@@ -180,14 +186,27 @@
 
 .max-whiteness {
   background-color: #ebebeb;
-  padding: 5% 0 5%;
+  padding: 5% 0 7%;
 }
 .max-whiteness .max-whiteness__container .max-whiteness__items .max-whiteness__item {
+  flex-basis: 30%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
   padding: 1%;
   border-top: 1px solid #c0c0c0;
+}
+.max-whiteness .max-whiteness__container .max-whiteness__items .max-whiteness__item .max-whiteness__item-title {
+  font-family: "Roboto-Medium";
+  font-weight: 500;
+  color: #666666;
+}
+.max-whiteness .max-whiteness__container .max-whiteness__items .max-whiteness__item .max-whiteness__item-text {
+  color: #85859b;
+}
+.max-whiteness .max-whiteness__container .max-whiteness__info {
+  margin-top: 7%;
 }
 .max-whiteness .max-whiteness__container .max-whiteness__info .max-whiteness__info-img {
   flex-basis: 65%;
@@ -195,9 +214,29 @@
 .max-whiteness .max-whiteness__container .max-whiteness__info .max-whiteness__info-descr {
   flex-basis: 35%;
 }
+.max-whiteness .max-whiteness__container .max-whiteness__info .max-whiteness__info-descr .max-whiteness__info-title {
+  color: #666666;
+  font-size: 2.5em;
+  font-weight: 400;
+}
+@media (max-width: 350px) {
+  .max-whiteness .max-whiteness__container .max-whiteness__info .max-whiteness__info-descr .max-whiteness__info-title {
+    font-size: 1.5em;
+  }
+}
+.max-whiteness .max-whiteness__container .max-whiteness__info .max-whiteness__info-descr .max-whiteness__info-text {
+  color: #85859b;
+  font-size: 1.125em;
+  line-height: 170%;
+}
+@media (max-width: 350px) {
+  .max-whiteness .max-whiteness__container .max-whiteness__info .max-whiteness__info-descr .max-whiteness__info-text {
+    font-size: 1em;
+  }
+}
 
 .clients {
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
 }
 .clients .clients__container {
   min-height: 300px;
@@ -226,7 +265,7 @@
   align-items: center;
   min-width: 255px;
   min-height: 135px;
-  border: 1px solid #C4C4C4;
+  border: 1px solid #c4c4c4;
 }
 @media (max-width: 1150px) {
   .clients .clients__container .clients__name {
@@ -285,7 +324,7 @@
 .sketchbook__container .sketchbook__content .sketchbook__text {
   font-size: 1.125em;
   line-height: 170%;
-  color: #85859B;
+  color: #85859b;
 }
 @media (max-width: 350px) {
   .sketchbook__container .sketchbook__content .sketchbook__text {
@@ -345,7 +384,7 @@
 }
 
 .contacts {
-  background-color: #4C5866;
+  background-color: #4c5866;
 }
 .contacts .contacts__container {
   min-height: 80px;
@@ -364,7 +403,7 @@
 @media (max-width: 400px) {
   .contacts .contacts__container .contacts__logo {
     text-align: center;
-    border-bottom: 1px solid #DDDDDD;
+    border-bottom: 1px solid #dddddd;
     padding: 5% 0;
   }
 }
@@ -381,6 +420,6 @@
 
 .date {
   text-align: center;
-  color: #4C5866;
+  color: #4c5866;
   font-size: 0.8125em;
 }/*# sourceMappingURL=style.css.map */
