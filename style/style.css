@@ -1,10 +1,10 @@
-.date, .contacts .contacts__container, .sketchbook__container, .clients .clients__container, .max-whiteness .max-whiteness__container, .paper-things__container, .nav__container {
+.date, .contacts .contacts__container, .sketchbook__container, .clients .clients__container, .products__container, .max-whiteness .max-whiteness__container, .paper-things__container, .nav__container {
   width: 80%;
   margin: 0 auto;
   font-family: "Roboto-Regular";
 }
 @media (max-width: 930px) {
-  .date, .contacts .contacts__container, .sketchbook__container, .clients .clients__container, .max-whiteness .max-whiteness__container, .paper-things__container, .nav__container {
+  .date, .contacts .contacts__container, .sketchbook__container, .clients .clients__container, .products__container, .max-whiteness .max-whiteness__container, .paper-things__container, .nav__container {
     width: 90%;
   }
 }
@@ -19,7 +19,7 @@
   background-color: white;
 }
 
-.max-whiteness .max-whiteness__container .max-whiteness__info, .max-whiteness .max-whiteness__container .max-whiteness__items {
+.products__container, .max-whiteness .max-whiteness__container .max-whiteness__info, .max-whiteness .max-whiteness__container .max-whiteness__items {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -81,7 +81,7 @@
   display: flex;
   justify-content: space-around;
 }
-.nav__container .nav__link .nav__link-ul .nav__link-li .nav__link-href {
+.nav__container .nav__link .nav__link-ul .nav__link-href {
   text-decoration: none;
   color: #4c5866;
 }
@@ -233,6 +233,41 @@
   .max-whiteness .max-whiteness__container .max-whiteness__info .max-whiteness__info-descr .max-whiteness__info-text {
     font-size: 1em;
   }
+}
+
+.products__container {
+  flex-direction: row;
+  align-items: center;
+}
+.products__container .products__item {
+  flex-grow: 1;
+  max-width: 255px;
+  min-height: 465px;
+}
+.products__container .products__item .products__item-image {
+  background: #EBEBEB;
+}
+.products__container .products__item .products__item-title-first {
+  font-size: 1.875em;
+  color: #666666;
+}
+.products__container .products__item .products__item-title-second {
+  font-size: 0.875em;
+  color: #B5B5BD;
+}
+.products__container .products__item .products__item-text {
+  max-width: 255px;
+  min-height: 155px;
+  color: #85859b;
+}
+.products__container .products__item .products__item-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #7875FE;
+  align-items: center;
 }
 
 .clients {
