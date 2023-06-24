@@ -46,19 +46,21 @@
         @media (max-width: 930px) {
             grid-row: 2;
         }
+
         @media (max-width: 550px) {
             display: none;
         }
+
         .nav__link-ul {
             list-style: none;
             display: flex;
             justify-content: space-around;
-            
+
             .nav__link-href {
-                    text-decoration: none;
-                    color: $nav;
+                text-decoration: none;
+                color: $nav;
             }
-            
+
         }
     }
 }
@@ -122,13 +124,13 @@
         .paper-things__content-heading {
             font-size: calc(30px + 20 * (100vw / 1440));
             line-height: 100%;
-            color: #4c5866;
+            color: $nav;
         }
 
         .paper-things__content-text {
             font-size: 1.125em;
             line-height: 150%;
-            color: #85859b;
+            color: $text-color;
         }
 
         .paper-things__content-button {
@@ -164,10 +166,13 @@
 .max-whiteness {
     background-color: $second-bg-color;
     padding: 5% 0 7%;
+
     .max-whiteness__container {
         @extend %container;
+
         .max-whiteness__items {
             @extend %flex;
+
             .max-whiteness__item {
                 flex-basis: 30%;
                 display: flex;
@@ -176,36 +181,45 @@
                 align-items: center;
                 padding: 1%;
                 border-top: 1px solid #c0c0c0;
+
                 .max-whiteness__item-title {
                     font-family: 'Roboto-Medium';
                     font-weight: 500;
                     color: $sub-title-color;
                 }
+
                 .max-whiteness__item-text {
                     color: $text-color;
                 }
             }
         }
+
         .max-whiteness__info {
             @extend %flex;
             margin-top: 7%;
+
             .max-whiteness__info-img {
                 flex-basis: 65%;
             }
+
             .max-whiteness__info-descr {
                 flex-basis: 35%;
+
                 .max-whiteness__info-title {
                     color: $sub-title-color;
                     font-size: 2.5em;
                     font-weight: 400;
+
                     @media (max-width: 350px) {
                         font-size: 1.5em;
                     }
                 }
+
                 .max-whiteness__info-text {
                     color: $text-color;
                     font-size: 1.125em;
                     line-height: 170%;
+
                     @media (max-width: 350px) {
                         font-size: 1em;
                     }
@@ -215,13 +229,13 @@
     }
 }
 
-.products__container{
+.products__container {
     @extend %container;
     @extend %flex;
     flex-direction: row;
     align-items: center;
-    
-    .products__item{
+
+    .products__item {
         flex-grow: 1;
         max-width: 255px;
         min-height: 465px;
@@ -229,19 +243,23 @@
         .products__item-image {
             background: #EBEBEB;
         }
+
         .products__item-title-first {
             font-size: 1.875em;
             color: $sub-title-color;
         }
+
         .products__item-title-second {
             font-size: 0.875em;
             color: #B5B5BD;
         }
+
         .products__item-text {
             max-width: 255px;
             min-height: 155px;
             color: $text-color;
         }
+
         .products__item-link {
             display: inline-flex;
             align-items: center;
@@ -310,9 +328,6 @@
 
 .sketchbook__container {
     @extend %container;
-    /*display: flex;
-    flex-direction: row;
-    padding-top: 8%;*/
     display: grid;
     grid-template-columns: 35% 65%;
     padding-top: 8%;
@@ -331,7 +346,7 @@
 
         .sketchbook__header {
             font-size: 2.5em;
-            color: #666666;
+            color: $sub-title-color;
 
             @media (max-width: 350px) {
                 font-size: 1.5em;
@@ -341,7 +356,7 @@
         .sketchbook__text {
             font-size: 1.125em;
             line-height: 170%;
-            color: #85859b;
+            color: $text-color;
 
             @media (max-width: 350px) {
                 font-size: 1em;
@@ -379,32 +394,17 @@
     }
 
     .sketchbook__image {
-        /*max-width: 730px;*/
         margin-left: 3.2%;
-
-        /*@media(max-width:824px) {
-            max-width: 450px;
-        }*/
     }
 }
 
 .sketchbook-page {
     width: 100%;
-    /*@media(max-width:824px) {
-        max-width: 600px;
-    }
 
-    @media(max-width:660px) {
-        max-width: 500px;
-    }
-
-    @media(max-width:564px) {
-        max-width: 400px;
-    }*/
 }
 
 .contacts {
-    background-color: #4c5866;
+    background-color: $nav;
 
     .contacts__container {
         @extend %container;
@@ -443,6 +443,6 @@
 .date {
     @extend %container;
     text-align: center;
-    color: #4c5866;
+    color: $nav;
     font-size: 0.8125em;
 }
