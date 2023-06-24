@@ -234,6 +234,7 @@
     @extend %flex;
     flex-direction: row;
     align-items: center;
+    min-height: 645px;
 
     .products__item {
         flex-grow: 1;
