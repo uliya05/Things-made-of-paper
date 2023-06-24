@@ -238,6 +238,7 @@
 .products__container {
   flex-direction: row;
   align-items: center;
+  min-height: 645px;
 }
 .products__container .products__item {
   flex-grow: 1;
@@ -326,9 +327,6 @@
 }
 
 .sketchbook__container {
-  /*display: flex;
-  flex-direction: row;
-  padding-top: 8%;*/
   display: grid;
   grid-template-columns: 35% 65%;
   padding-top: 8%;
@@ -396,26 +394,11 @@
   }
 }
 .sketchbook__container .sketchbook__image {
-  /*max-width: 730px;*/
   margin-left: 3.2%;
-  /*@media(max-width:824px) {
-      max-width: 450px;
-  }*/
 }
 
 .sketchbook-page {
   width: 100%;
-  /*@media(max-width:824px) {
-      max-width: 600px;
-  }
-
-  @media(max-width:660px) {
-      max-width: 500px;
-  }
-
-  @media(max-width:564px) {
-      max-width: 400px;
-  }*/
 }
 
 .contacts {
