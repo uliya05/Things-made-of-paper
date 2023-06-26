@@ -305,22 +305,34 @@ html {
     flex-direction: row;
     align-items: center;
     min-height: 645px;
+    @media (max-width: 1290px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
+    }
+    @media (max-width: 604px) {
+        display: flex;
+        flex-direction: column;
+    }
 
     .products__item {
         flex-grow: 1;
         max-width: 255px;
         min-height: 465px;
+        margin-top: 10%;
+        margin-bottom: 10%;
 
         .products__item-image {
             background: #ebebeb;
         }
 
-        .products__item-title-first {
+        .products__item-first {
             font-size: 1.875em;
             color: $sub-title-color;
         }
 
-        .products__item-title-second {
+        .products__item-second {
             font-size: 0.875em;
             color: #b5b5bd;
         }
@@ -329,14 +341,14 @@ html {
             max-width: 255px;
             min-height: 155px;
             color: $text-color;
+            line-height:1.875em ;
+            font-size: 1.125em;
         }
 
         .products__item-link {
             display: inline-flex;
-            align-items: center;
-            gap: 5px;
             text-decoration: none;
-            font-size: 20px;
+            font-size: 1.25em;
             color: #7875fe;
             align-items: center;
         }
@@ -357,7 +369,7 @@ html {
         @media (max-width: 1150px) {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1f);
+            grid-template-rows: repeat(2, 1fr);
             justify-items: center;
         }
 
