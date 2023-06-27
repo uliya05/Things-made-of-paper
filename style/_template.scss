@@ -16,10 +16,25 @@
     color: #7875fe;
     font-size: 1.25em;
     background-color: white;
+    cursor: pointer;
 }
 
 %flex {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/Roboto-Medium.ttf);
 }
